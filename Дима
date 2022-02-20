@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;// позаоляет работать с инвкентарем 
+//этот скрипт содержит бахов3ую информацию о объектах 
+
+public class DataBase : MonoBehaviour
+{
+
+    public List<Item> items = new List<Item>();// создание списка для элементов 
+
+}
+
+[System.Serializable]
+
+public class Item // содержание информации об объекте 
+{
+    public int id;
+    public string name;
+    public Sprite image;
+}
